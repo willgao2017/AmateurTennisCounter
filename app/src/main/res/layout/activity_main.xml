@@ -16,22 +16,24 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:gravity="right"
                 android:text="Player A" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:text="Big score" />
+                android:text="Big score"
+                android:padding="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:text="Small score" />
+                android:text="Small score"
+                android:margin="80dp"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -61,7 +63,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Big score" />
+                android:text="Big score"
+                android:padding="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
