@@ -47,7 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:text="Q" />
+                android:text="Q"
+                android:onClick="aQuit"/>
 
         </LinearLayout>
 
@@ -84,20 +85,22 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Q" />
+                android:text="Q"
+                android:onClick="bQuit"/>
 
         </LinearLayout>
 
 
     </LinearLayout>
 
-    <TextView
+    <Button
         android:id="@+id/new_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="New Game" />
+        android:text="New Game"
+        android:onClick="newGame"/>
 
     <TextView
         android:id="@+id/winner_name"
@@ -105,7 +108,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/new_game"
         android:layout_centerHorizontal="true"
-        android:text="XXX XXX"
         />
 
 

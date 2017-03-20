@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         }
         displayForTeamA(playerAGameScore, playerASetScore);
         displayForTeamB(playerBGameScore, playerBSetScore);
+        if (playerASetScore == 6)
+            displayWinnerA ();
 
     }
 
@@ -45,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
         }
         displayForTeamA(playerAGameScore, playerASetScore);
         displayForTeamB(playerBGameScore, playerBSetScore);
+        if (playerBSetScore == 6)
+            displayWinnerB ();
+
     }
 
     /**
@@ -65,6 +70,32 @@ public class MainActivity extends AppCompatActivity {
         TextView setScoreView = (TextView) findViewById(R.id.player_b_setscore);
         gameScoreView.setText(String.valueOf(score1));
         setScoreView.setText(String.valueOf(score2));
+    }
+
+
+    public void displayWinnerA () {
+        TextView winnerNameView = (TextView) findViewById(R.id.winner_name);
+        winnerNameView.setText("Player A");
+    }
+
+    public void displayWinnerB () {
+        TextView winnerNameView = (TextView) findViewById(R.id.winner_name);
+        winnerNameView.setText("Player B");
+    }
+
+    public void aQuit (View v) {
+        displayWinnerB();
+    }
+
+    public void bQuit (View v) {
+        displayWinnerA();
+    }
+
+    public void newGame (View v) {
+        playerAScore = playerAGameScore = playerASetScore = 0;
+        playerBScore = playerBGameScore = playerBSetScore = 0;
+        displayForTeamA(playerAGameScore, playerASetScore);
+        displayForTeamB(playerBGameScore, playerBSetScore);
     }
 
 }
