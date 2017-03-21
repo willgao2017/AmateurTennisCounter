@@ -19,7 +19,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
-                android:text="Player A" />
+                android:text="Player A"
+                android:textSize="40sp"
+                />
 
             <TextView
                 android:id="@+id/player_a_setscore"
@@ -27,30 +29,46 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:padding="10dp"
-                android:text="0" />
+                android:text="0"
+                android:textSize="40sp"
+                />
 
             <TextView
                 android:id="@+id/player_a_gamescore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:text="0" />
+                android:padding="10dp"
+                android:text="0"
+                android:textSize="40sp"
+                />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:onClick="scoreForPlayerA"
-                android:text="+" />
+                android:text="+"
+                android:textSize="30sp"
+                />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:text="Q"
-                android:onClick="aQuit"/>
+                android:onClick="aQuit"
+                android:textSize="22sp"
+                android:background="@android:color/holo_red_light"
+
+                />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -61,32 +79,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Player B" />
+                android:text="Player B"
+                android:textSize="40sp"
+                />
 
             <TextView
                 android:id="@+id/player_b_setscore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="0" />
+                android:text="0"
+                android:textSize="40sp"
+                />
 
             <TextView
                 android:id="@+id/player_b_gamescore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:text="0"
+                android:textSize="40sp"
+                android:padding="10dp"
+                />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="scoreForPlayerB"
-                android:text="+" />
+                android:text="+"
+                android:textSize="30sp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Q"
-                android:onClick="bQuit"/>
+                android:onClick="bQuit"
+                android:textSize="22sp"
+                android:background="@android:color/holo_red_light"
+                />
 
         </LinearLayout>
 
@@ -100,7 +129,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="New Game"
-        android:onClick="newGame"/>
+        android:onClick="newGame"
+        android:padding="30dp"/>
 
     <TextView
         android:id="@+id/winner_name"
@@ -108,6 +138,10 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/new_game"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp"
+        android:text="xxxxxxxx"
         />
 
 
