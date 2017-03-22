@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
         playerBScore = playerBGameScore = playerBSetScore = 0;
         displayForTeamA(playerAGameScore, playerASetScore);
         displayForTeamB(playerBGameScore, playerBSetScore);
+        TextView winnerNameView = (TextView) findViewById(R.id.winner_name);
+        winnerNameView.setText("_____");
     }
 
 }
